@@ -22,6 +22,10 @@ a {
     margin: 0 auto;
 }
 
+:root {
+    --main-font: "Inter", sans-serif;
+}
+
 
 /* ===========================
    All Common Tags
@@ -41,45 +45,50 @@ a {
     padding-top: 49px;
 }
 
-.main_menu .logo p{
+.main_menu .logo p {
+    font-family: "Inter", sans-serif;
     font-size: 32px;
     color: #ffffff;
 }
 
-.main_menu .logo p span{
+.main_menu .logo p span {
     color: #ffffff;
     opacity: 28%;
 }
 
-.main_menu .menu{
+.main_menu .menu {
     display: flex;
     justify-content: space-between;
     gap: 67px;
     align-items: center;
 }
 
-.main_menu .menu .menu_list ul{
+.main_menu .menu .menu_list ul {
     display: flex;
     gap: 43px;
 }
-.main_menu .menu .menu_list ul li a{
+
+.main_menu .menu .menu_list ul li a {
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     opacity: 50%;
     color: #ffffff;
 }
-.main_menu .menu .menu_list ul li a:hover{
+
+.main_menu .menu .menu_list ul li a:hover {
     cursor: pointer;
     opacity: 100%;
     color: #ffffff;
 }
 
-.main_menu .menu .menu_icon ul{
+.main_menu .menu .menu_icon ul {
     display: flex;
-    gap: 17px ;
+    gap: 17px;
     align-items: center;
 }
+
 .main_menu .menu .menu_icon ul li {
-   margin-top: -35px;
+    margin-top: -35px;
 }
 
 
@@ -97,18 +106,19 @@ a {
 /* ===========================
 Banner  Style start
 =============================== */
-#banner{
+#banner {
     background: #385D50;
 }
 
-.banner_container{
+.banner_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
 }
 
-.banner_container .hero_text h1{
+.banner_container .hero_text h1 {
+    font-family: "Inter", sans-serif;
     font-size: 54px;
     font-weight: 500;
     color: #ffffff;
@@ -116,7 +126,7 @@ Banner  Style start
     max-width: 420px;
 }
 
-.banner_container .hero_text button{
+.banner_container .hero_text button {
     padding: 11px 35px;
     border-radius: 1000px;
     border: 1px solid #ffffffce;
@@ -124,22 +134,157 @@ Banner  Style start
     background: transparent;
     transition: all linear 0.3s;
     color: #ffffff;
+    font-family: "Inter", sans-serif;
 }
 
 .banner_container .hero_text button:hover {
     cursor: pointer;
-    background: #F9BF29 ;
+    background: #F9BF29;
     color: black;
 }
 
-.banner_container .hero_image{
+.banner_container .hero_image {
     max-width: 810px;
+    position: relative;
+
 }
 
-.banner_container .hero_image img{
-    width: 100%;
+.banner_container .hero_image::before {
+    content: "";
+    background: url("../images/Dotted.svg") no-repeat;
+    position: absolute;
+    width: 207px;
+    height: 100%;
+    right: -14px;
+    left: auto;
+    top: 14%;
+    z-index: 0;
 }
+
+.banner_container .hero_image img {
+    width: 100%;
+    position: relative;
+}
+
+
 
 /* ===========================
  Banner Style ends
+=============================== */
+
+
+
+/* ===========================
+ Products Style starts
+=============================== */
+
+#Products {
+    padding: 164px 0;
+}
+
+.products_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.products_container .products_text h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 34px;
+    color: #2F2F2F;
+    font-weight: 600;
+    max-width: 205px;
+    padding-bottom: 27px;
+}
+
+.products_container .products_text p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6A6A6A;
+    max-width: 225px;
+    line-height: 1.7;
+}
+
+.products_container .products_text button {
+    margin-top: 33px;
+    padding: 11px 35px;
+    border: 1px solid #000000;
+    border-radius: 1000px;
+    color: #000000;
+    background: transparent;
+    transition: all linear 0.3s;
+}
+
+.products_container .products_text button:hover {
+    cursor: pointer;
+    background: #000000;
+    color: #ffffff;
+}
+
+.products_container .products_image_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+
+}
+
+.products_container .products_image_price .products_image {
+    padding-bottom: 45px;
+    max-width: 230px;
+    margin-top: -90px;
+
+
+
+}
+
+.products_container .products_image_price .products_image img {
+    width: 100%;
+}
+
+.products_container .products_image_price p {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2F2F2F;
+}
+
+.products_container .products_image_price .products {
+    transition: all linear 0.3s;
+    max-width: 297px;
+    position: relative;
+}
+
+.products_container .products_image_price .products .plus_icon{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    font-size: 25px;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.products_container .products_image_price .products:hover {
+    cursor: pointer;
+    background: rgba(53, 115, 110, 0.108);
+    padding: 0 30px 20px 20px;
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+
+
+
+.products_container .products_image_price .products:hover .plus_icon{
+    opacity: 1;
+    
+}
+
+/* ===========================
+ Products Style ends
 =============================== */
