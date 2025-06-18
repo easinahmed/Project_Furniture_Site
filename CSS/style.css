@@ -1,0 +1,141 @@
+/* ===========================
+   All Common Tags
+=============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* ===========================
+   All Common Tags
+=============================== */
+
+
+/* ===========================
+  Nav Style starts
+=============================== */
+.navbar {
+    background: #385D50;
+}
+
+.main_menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 49px;
+}
+
+.main_menu .logo p{
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.main_menu .logo p span{
+    color: #ffffff;
+    opacity: 28%;
+}
+
+.main_menu .menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 67px;
+    align-items: center;
+}
+
+.main_menu .menu .menu_list ul{
+    display: flex;
+    gap: 43px;
+}
+.main_menu .menu .menu_list ul li a{
+    font-size: 16px;
+    opacity: 50%;
+    color: #ffffff;
+}
+.main_menu .menu .menu_list ul li a:hover{
+    cursor: pointer;
+    opacity: 100%;
+    color: #ffffff;
+}
+
+.main_menu .menu .menu_icon ul{
+    display: flex;
+    gap: 17px ;
+}
+
+
+
+
+
+
+
+/* ===========================
+  Nav Style ends
+=============================== */
+
+
+
+/* ===========================
+Banner  Style start
+=============================== */
+#banner{
+    background: #385D50;
+}
+
+.banner_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.banner_container .hero_text h1{
+    font-size: 54px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-bottom: 117px;
+    max-width: 420px;
+}
+
+.banner_container .hero_text button{
+    padding: 11px 35px;
+    border-radius: 1000px;
+    border: 1px solid #ffffffce;
+    margin-right: 14px;
+    background: transparent;
+    transition: all linear 0.3s;
+    color: #ffffff;
+}
+
+.banner_container .hero_text button:hover {
+    cursor: pointer;
+    background: #F9BF29 ;
+    color: black;
+}
+
+.banner_container .hero_image{
+    max-width: 810px;
+}
+
+.banner_container .hero_image img{
+    width: 100%;
+}
+
+/* ===========================
+ Banner Style ends
+=============================== */
