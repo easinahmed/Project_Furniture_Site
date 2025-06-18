@@ -76,6 +76,10 @@ a {
 .main_menu .menu .menu_icon ul{
     display: flex;
     gap: 17px ;
+    align-items: center;
+}
+.main_menu .menu .menu_icon ul li {
+   margin-top: -35px;
 }
 
 
