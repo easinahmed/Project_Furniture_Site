@@ -91,6 +91,24 @@ a {
     margin-top: -35px;
 }
 
+nav a{
+    position: relative;
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: #F9BF29;
+    left: 0;
+    bottom: -10px;
+    transition: all linear 0.3s;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
 
 
 
