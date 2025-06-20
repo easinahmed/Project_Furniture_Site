@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    color: #6A6A6A;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -29,6 +33,9 @@ a {
 
 :root {
     --main-font: "Inter", sans-serif;
+    --green-color: #385D50;
+
+
 
 }
 
@@ -42,7 +49,7 @@ a {
   Nav Style starts
 =============================== */
 .navbar {
-    background: #385D50;
+    background: var(--green-color);
 }
 
 .main_menu {
@@ -131,7 +138,7 @@ nav a:hover::after {
 Banner  Style start
 =============================== */
 #banner {
-    background: #385D50;
+    background: var(--green-color);
 }
 
 .banner_container {
@@ -502,7 +509,8 @@ Service Style start
     border-radius: 1000px;
     color: #000000;
     font-size: 14px;
-    transition: all 0.3s ease-in-out;position: relative;
+    transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 .service_text button:hover {
@@ -513,15 +521,389 @@ Service Style start
 }
 
 
+/* ===========================
+Service Style end
+=============================== */
 
 
 
+/* ===========================
+Chair Style start
+=============================== */
+
+#chair {
+    padding: 164px 0 107px 0;
+}
+
+.chair_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.chair_container .image {
+    width: 98px;
+    height: 98px;
+    background: rgba(53, 115, 110, 0.307);
+    border-radius: 12px;
+    position: relative;
+}
+
+.chair_container .image img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -20%);
 
 
+}
+
+.kruzi .image img {
+    width: 120%;
+    transform: translate(-41%, -20%);
+}
+
+.chair_container .nordic,
+.chair_container .kruzi,
+.chair_container .ergonomic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 33px;
+}
+
+.chair_container .text p {
+    padding-bottom: 11px;
+    padding-top: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6A6A6A;
+    max-width: 211px;
+}
+
+.chair_container .text h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.chair_container .text a {
+    color: #6A6A6A;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+/* ===========================
+Chair Style end
+=============================== */
+
+
+
+/* ===========================
+Testomonial Style start
+=============================== */
+
+#Testomonial {
+    padding: 0 0 40px 0;
+}
+
+.testomonial_container h2 {
+    text-align: center;
+    font-size: 34px;
+    line-height: 1.2;
+    padding-bottom: 47px;
+}
+
+.testomonial_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 110px;
+    padding-bottom: 42px;
+}
+
+.testomonial_text .icon {
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.112);
+    position: relative;
+    transition: all linear 0.3s;
+}
+
+.testomonial_text .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.testomonial_text .icon:hover {
+    background: var(--green-color);
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 4px #385d506c;
+}
+
+.testomonial_text p {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.8;
+
+}
+
+.testomonial_container .person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testomonial_container .person .image {
+    height: 77px;
+    width: 77px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 13px;
+}
+
+.testomonial_container .person p {
+    padding-bottom: 4px;
+}
+
+.testomonial_container .dot_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 13px;
+}
+
+.testomonial_container .dot_container .dot {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    transition: all linear 0.3s;
+
+}
+
+.testomonial_container .dot_container .active {
+    background: var(--green-color);
+}
+
+
+
+/* ===========================
+Testomonial Style end
+=============================== */
 
 
 
 
 /* ===========================
-Service Style end
+Blog Style start
+=============================== */
+
+#Blog {
+    padding-bottom: 160px;
+}
+
+.blog_container .blog_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 36px;
+}
+
+.blog_text h2 {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.blog_text a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    text-decoration: underline solid 3px;
+    color: #000000;
+}
+
+.blog_container .blog_image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.blog_image .post {
+    max-width: 360px;
+}
+
+.blog_image .post .image {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 44px;
+}
+
+.blog_image .post .image img {
+    width: 100%;
+}
+
+.blog_image .post h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2F2F2F;
+    padding-bottom: 6px;
+}
+
+.blog_image .post p {
+    font-size: 14px;
+    color: #2F2F2F;
+    font-weight: 600;
+}
+
+.blog_image .post p span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* ===========================
+Blog Style end
+=============================== */
+
+
+
+/* ===========================
+Footer Style Start
+=============================== */
+
+footer {
+    background: #ffff;
+    padding: 97px 0;
+}
+
+.footer_container .contact {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.contact_text h3 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+
+}
+
+.contact_text h3 i{
+    color: #CFCFCF;
+}
+
+.contact_text form{
+    display: flex;
+    align-items: center;
+}
+
+.contact_text form input{
+    width: 262px;
+    margin-right: 15px;
+    padding: 15px 131px 15px 22px;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+}
+.contact_text form button{
+    width: 50px;
+    height: 48px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    background: #385D50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact .image{
+    width: 460px;
+    margin-top: -16%;
+}
+.contact .image img{
+    width: 100%;
+}
+
+.footer_text_list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer_text h2{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer_text_list p{
+    max-width: 360px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6A6A6A;
+}
+
+.footer_text_list ul li a{
+    color: #6A6A6A;
+    font-size: 14px;
+    line-height: 2;
+}
+.footer_text .footer_icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_text .footer_icons .icon{
+    height: 41px;
+    width: 41px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    position: relative;
+}
+
+.footer_text .footer_icons .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer_container .footer_copyright{
+    padding: 36px 0 93px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #EFF2F1;
+    margin-top: 32px;
+}
+
+.footer_container .footer_copyright p{
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.footer_container .footer_copyright .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 42px;
+}
+
+
+/* ===========================
+Footer Style end
 =============================== */
