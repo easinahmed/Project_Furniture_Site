@@ -10,7 +10,7 @@
     font-family: "Inter", sans-serif;
 }
 
-body{
+body {
     background: #EFF2F1;
 }
 
@@ -97,11 +97,11 @@ a {
     margin-top: -35px;
 }
 
-nav a{
+nav a {
     position: relative;
 }
 
-nav a::after{
+nav a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -112,7 +112,7 @@ nav a::after{
     transition: all linear 0.3s;
 }
 
-nav a:hover::after{
+nav a:hover::after {
     width: 100%;
 }
 
@@ -166,6 +166,7 @@ Banner  Style start
     background: #F9BF29;
     color: black;
     border-style: none;
+    box-shadow: 0 0 4px #f9be297c;
 }
 
 .banner_container .hero_image {
@@ -246,6 +247,7 @@ Banner  Style start
     cursor: pointer;
     background: #000000;
     color: #ffffff;
+    box-shadow: 0 0 4px #0000006a;
 }
 
 .products_container .products_image_price {
@@ -285,7 +287,7 @@ Banner  Style start
     position: relative;
 }
 
-.products_container .products_image_price .products .plus_icon{
+.products_container .products_image_price .products .plus_icon {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -305,9 +307,9 @@ Banner  Style start
 
 
 
-.products_container .products_image_price .products:hover .plus_icon{
+.products_container .products_image_price .products:hover .plus_icon {
     opacity: 1;
-    
+
 }
 
 /* ===========================
@@ -321,23 +323,23 @@ Banner  Style start
 About Style start
 =============================== */
 
-#About{
+#About {
     padding: 0;
 }
 
-.about_container{
+.about_container {
     display: flex;
     justify-content: space-between;
     gap: 86px;
 }
 
-.about_container .about_text h2{
+.about_container .about_text h2 {
     padding-bottom: 27px;
     font-size: 34px;
     font-weight: 500;
 }
 
-.about_container .about_text p{
+.about_container .about_text p {
     font-size: 14px;
     color: #6A6A6A;
     line-height: 1.7;
@@ -345,12 +347,12 @@ About Style start
     max-width: 444px;
 }
 
-.about_container .about_text .about_icons{
+.about_container .about_text .about_icons {
     display: flex;
     gap: 10px;
 }
 
-.about_text .about_icons .icon{
+.about_text .about_icons .icon {
     border-radius: 50%;
     height: 33px;
     width: 33px;
@@ -359,30 +361,30 @@ About Style start
     position: relative;
 }
 
-.about_text .about_icons .icon img{
+.about_text .about_icons .icon img {
     position: absolute;
     right: 40%;
 }
 
-.about_text .about_icons h4{
+.about_text .about_icons h4 {
     font-size: 14px;
     font-weight: 500p;
     padding-bottom: 10px;
     padding-top: 4px;
 }
 
-.about_text .about_icons p{
+.about_text .about_icons p {
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 26px;
     max-width: 247px;
 }
 
-.about_container .about_image img{
+.about_container .about_image img {
     position: relative;
 }
 
-.about_container .about_image{
+.about_container .about_image {
     max-width: 542px;
     border-radius: 20px;
     position: relative;
@@ -390,7 +392,7 @@ About Style start
 
 
 
-.about_container .about_image::before{
+.about_container .about_image::before {
     content: "";
     position: absolute;
     background: url("../images/Dot.svg");
@@ -413,83 +415,106 @@ About Style ends
 Service Style start
 =============================== */
 
-#Service{
+#Service {
     padding: 160px 0;
 }
 
-.service_container{
+.service_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 55px;
     position: relative;
-    
+
 }
 
-.service_container::before{
+.service_container::before {
     content: "";
     position: absolute;
     background: url("../images/Dot_3.svg");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    transform: translate(-110px, -50px);
+    top: -50px;
+    left: -110px;
     z-index: 0;
 }
 
-.service_image .item{
+.service_image .item {
     border-radius: 12px;
     overflow: hidden;
 
 }
 
-.service_image .item img{
+.service_image .item img {
     width: 100%;
     position: relative;
 }
 
-.top{
-        position: absolute;
+.top {
+    position: absolute;
     transform: translate(236%, -271%);
 }
 
 .item.bottom {
     position: absolute;
-    transform: translate(120%, -84%);}
+    transform: translate(120%, -84%);
+}
 
-    .service_text h2{
-        font-size: 34px;
-        font-weight: 500;
-        max-width: 380px;
-        line-height: 1.2;
-        padding-bottom: 28px;
-    }
+.service_text h2 {
+    font-size: 34px;
+    font-weight: 500;
+    max-width: 380px;
+    line-height: 1.2;
+    padding-bottom: 28px;
+}
 
-    .service_text p{
-        font-size: 14px;
-        font-weight: 400;
-        color: #6A6A6A;
-        max-width: 444px;
-        padding-bottom: 30px;
-    }
+.service_text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6A6A6A;
+    max-width: 444px;
+    padding-bottom: 30px;
+}
 
-    .service_text_points{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 41px;
-    }
+.service_text_points {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 41px;
+}
 
-   
 
-     .service_text_points ul li{
-        list-style: circle;
-        max-width: 194px;
-        padding-bottom: 24px;
-        font-size: 14px;
-        font-weight: 400;
-        color: #6A6A6A;
-    }
+
+.service_text_points ul li {
+    list-style: circle;
+    max-width: 194px;
+    padding-bottom: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6A6A6A;
+}
+
+.service_text button {
+    padding: 14px 35px;
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius: 1000px;
+    color: #000000;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;position: relative;
+}
+
+.service_text button:hover {
+    cursor: pointer;
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 4px #00000077;
+}
+
+
+
+
 
 
 
